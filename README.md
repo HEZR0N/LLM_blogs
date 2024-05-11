@@ -5,6 +5,10 @@ _LEO, an embodied multi-modal generalist agent capable of grounding, reasoning, 
 
 ## Intro
 Some researchers believe that the current work in AI will eventually result in the creation of a single generalist model that is able to handle any problem that comes its way. In this blog, we will discuss the ideas, experiments, and results that came of the creation of LEO, an embodied multimodal generalist agent that represents one more step towards that amazingly well-rounded generalist model. 
-
+## Related Work
+## Models and Tokenization
+## Datasets
+## Experiments and Results
+## Closing Thoughts
 #### References
 Author(s). (2024). An Embodied Generalist Agent in 3D World. arXiv, 2311.12871. Retrieved from https://arxiv.org/2311.12871
