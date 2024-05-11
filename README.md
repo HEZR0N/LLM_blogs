@@ -24,5 +24,10 @@ Some researchers believe that the current work in AI will eventually result in t
  - Scaling up LLM
  - Alignment leads to consistent improvements.
 ## Closing Thoughts
+LEO is an excellent demonstration of our current ability to cobble together multiple models trained on several different datasets of various modalities into a single model, but in trying to do everything, it still falls behind some models that are designed to complete a single type of tasks. In other words, LEO is also a good demonstration of our current limitations. The designers of LEO have not yet explored any ideas/features to accommodate LEO’s skill deficits in certain tasks (i.e. novel scenes), though they have proposed the following for future work:
+ - More Data: Enhancing the 3D VL understanding capability by leveraging larger-scale VL data from richer 3D domains
+ - Better translate Vision into Action: Continually bridging the gap between 3D VL and embodied action, as our experiments reveal the efficacy of their joint learning
+ - Possibly use RLHF: Investigating the issues of safety and alignment in the context of embodied generalist
+
 #### References
 Author(s). (2024). An Embodied Generalist Agent in 3D World. arXiv, 2311.12871. Retrieved from https://arxiv.org/2311.12871
