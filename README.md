@@ -3,7 +3,7 @@ _By Hezron Perez, Computer Science graduate student at UTSA, May 10, 2024_
 
 
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/67386294-a0de-4cbd-828f-5933db993678)      
-_LEO, an embodied multi-modal generalist agent capable of grounding, reasoning, chatting, planning, and acting in the 3D world. LEO is trained in a two-stage scheme: (i) 3D vision-language (VL) alignment and (ii) 3D vision-language-action (VLA) instruction tuning._
+_Figure 1: LEO, an embodied multi-modal generalist agent capable of grounding, reasoning, chatting, planning, and acting in the 3D world. LEO is trained in a two-stage scheme: (i) 3D vision-language (VL) alignment and (ii) 3D vision-language-action (VLA) instruction tuning._
 
 ## Intro
 Some researchers believe that the current work in AI will eventually result in the creation of a single generalist model that is able to handle any problem that comes its way. In this blog, we will discuss the ideas, experiments, and results that came of the creation of LEO, an embodied multimodal generalist agent that represents one more step towards that amazingly well-rounded generalist model, which in this case, can perform tasks such as 3D captioning, question answering, embodied reasoning, navigation, and manipulation.
@@ -18,23 +18,24 @@ The agent LEO needs to understand its relationship to its environment and define
 Current works curate 3D instruction-following data either manually with bounding boxes and dense captions or LVLMs. In contrast, LEO uses scene-graph-based prompting and refinement methods to prompt and correct the data.
 ## Models and Tokenization
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/148abe01-271d-4df4-bff8-50e4ddd361c1)         
-_Converting all data of different modalities into a sequence of tokens_     
+_Figure 2: Converting all data of different modalities into a sequence of tokens_         
 
 ## Datasets
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/4a1da4c0-a9a7-4dcb-bd83-036a699c98b2)       
-
+Figure 3:      
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/8dec55bc-043d-4ac0-a968-19e61126b20c)       
-
+Figure 4:      
 ## Experiments and Results
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/b66487a0-2744-47ef-9e20-9ede83cd219b)    
-
+Figure 5:      
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/a78a1c7e-23be-4e59-ba9b-42b876a92f84)      
-
+Figure 6:     
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/b8fc10a8-70a5-4916-8e37-5ecc28f6a740)     
-
+Figure 7:      
 
 
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/9e8d59b1-169a-412b-94ff-120ac5f3d23c)     
+Figure 8:     
 
  - The instruction tuning of LEO conforms to the scaling law
  - Scaling up LLM
