@@ -19,6 +19,11 @@ Current works curate 3D instruction-following data either manually with bounding
 ## Models and Tokenization
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/148abe01-271d-4df4-bff8-50e4ddd361c1)         
 _Figure 2: Converting all data of different modalities into a sequence of tokens_         
+For text, LEO uses the SentencePiece tokenizer to encode text with 32k subwords. 2D images and 3D data also get their own tokens, but how are actions tokenized? Well,  these discrete actions are mapped to the least used tokens in SentencePiece. While it may seem unintuitive to override existing tokens, the probability for those tokens was so low that it's worth doing so - this is a trick that LEO researchers borrowed from Google Deepmind. After tokenization, all tokens are ordered into the format seen in _Figure 2_. As seen in _Figure 1_:
+- Text: directly decoded with an embedding look-up table
+-  2D images: encoded by a pretrained OpenCLIP ConvNext model
+- 3D data: first encoded by a pretrained point cloud encoder, PointNet++, and then processed with  Spatial Transformers to turn the point cloud embedding of all objects into object-centric 3D token embeddings
+After applying several token embedding functions to process the tokens, all the tokens are sent to the LLM, Vicuna-7B.
 
 ## Datasets
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/4a1da4c0-a9a7-4dcb-bd83-036a699c98b2)       
