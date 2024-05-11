@@ -25,7 +25,7 @@ For text, LEO uses the SentencePiece tokenizer to encode text with 32k subwords.
 - 3D data: first encoded by a pretrained point cloud encoder, PointNet++, and then processed with  Spatial Transformers to turn the point cloud embedding of all objects into object-centric 3D token embeddings
 
 After applying several token embedding functions to process the tokens, all the tokens are sent to the LLM, Vicuna-7B.              
-During training, the pretrained 3D point cloud encoder and the LLM are frozen (*not enough 3D data to fine-tune with, and the LLM is already trained well), while the 2D image encoder (*we have enough 2D data to fine-tune), the Spatial Transformer, and the LoRA parameters (*to align/ground the LLM without changing its weights or losing any functionality) are updated during training.           
+During training, the pretrained 3D point cloud encoder and the LLM are frozen (*not enough 3D data to fine-tune with, and the LLM is already trained well), while the 2D image encoder (*we have enough 2D data to fine-tune), the Spatial Transformer, and the LoRA parameters (*to align/ground the LLM without changing its weights or losing any functionality) are updated during training. Thus, out of LEO’s ~7B parameters, only ~142M of them will be tuned.          
 ## Datasets
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/4a1da4c0-a9a7-4dcb-bd83-036a699c98b2)       
 Figure 3:      
