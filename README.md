@@ -1,5 +1,8 @@
 # Analysis: An Embodied Generalist Agent in 3D World
-By Hezron Perez, Computer Science graduate student at UTSA, May 10, 2024
+_By Hezron Perez, Computer Science graduate student at UTSA, May 10, 2024
+_
+
+
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/67386294-a0de-4cbd-828f-5933db993678)      
 _LEO, an embodied multi-modal generalist agent capable of grounding, reasoning, chatting, planning, and acting in the 3D world. LEO is trained in a two-stage scheme: (i) 3D vision-language (VL) alignment and (ii) 3D vision-language-action (VLA) instruction tuning._
 
