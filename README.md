@@ -9,8 +9,10 @@ _LEO, an embodied multi-modal generalist agent capable of grounding, reasoning, 
 Some researchers believe that the current work in AI will eventually result in the creation of a single generalist model that is able to handle any problem that comes its way. In this blog, we will discuss the ideas, experiments, and results that came of the creation of LEO, an embodied multimodal generalist agent that represents one more step towards that amazingly well-rounded generalist model, which in this case, can perform tasks such as 3D captioning, question answering, embodied reasoning, navigation, and manipulation.
 ## Related Work
 ### Generalist agents
+Jacks of all trades, masters of none! ChatGPT has knowledge on a wide range of topics, but it isn’t a specialist in any single domain. It has a limited ability to abstract to tackle novel problems into general ones, which is more apparent when provided with a few examples in the prompt so it can do few-shot learning. LEO needs a similar capability in the 3D world, maintaining knowledge of its state relative to its environment. 
 ### Multi-modal instruction tuning
 ### Grounded 3D scene understanding
+### 3D data prompting from LLMs
 ## Models and Tokenization
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/148abe01-271d-4df4-bff8-50e4ddd361c1)      
 
