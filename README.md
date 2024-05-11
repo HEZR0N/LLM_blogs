@@ -17,7 +17,8 @@ The agent LEO needs to understand its relationship to its environment and define
 ### 3D data prompting from LLMs
 Current works curate 3D instruction-following data either manually with bounding boxes and dense captions or LVLMs. In contrast, LEO uses scene-graph-based prompting and refinement methods to prompt and correct the data.
 ## Models and Tokenization
-![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/148abe01-271d-4df4-bff8-50e4ddd361c1)      
+![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/148abe01-271d-4df4-bff8-50e4ddd361c1)         
+_Converting all data of different modalities into a sequence of tokens_     
 
 ## Datasets
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/4a1da4c0-a9a7-4dcb-bd83-036a699c98b2)       
