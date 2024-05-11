@@ -6,7 +6,7 @@ _By Hezron Perez, Computer Science graduate student at UTSA, May 10, 2024_
 _LEO, an embodied multi-modal generalist agent capable of grounding, reasoning, chatting, planning, and acting in the 3D world. LEO is trained in a two-stage scheme: (i) 3D vision-language (VL) alignment and (ii) 3D vision-language-action (VLA) instruction tuning._
 
 ## Intro
-Some researchers believe that the current work in AI will eventually result in the creation of a single generalist model that is able to handle any problem that comes its way. In this blog, we will discuss the ideas, experiments, and results that came of the creation of LEO, an embodied multimodal generalist agent that represents one more step towards that amazingly well-rounded generalist model. 
+Some researchers believe that the current work in AI will eventually result in the creation of a single generalist model that is able to handle any problem that comes its way. In this blog, we will discuss the ideas, experiments, and results that came of the creation of LEO, an embodied multimodal generalist agent that represents one more step towards that amazingly well-rounded generalist model, which in this case, can perform tasks such as 3D captioning, question answering, embodied reasoning, navigation, and manipulation.
 ## Related Work
 ### Generalist agents
 ### Multi-modal instruction tuning
