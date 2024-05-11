@@ -13,6 +13,7 @@ Jacks of all trades, masters of none! ChatGPT has knowledge on a wide range of t
 ### Multi-modal instruction tuning
 Currently, instruction-tuned LVLMs (Large Vision-Language Models) can take instruction via text as input as well as images, both from which the model is able to encode to a common (abstract) representation. However, these images are 2D, and while there are models that can handle 3D input, they only go as far as interpreting the input/instructions and are not trained to interact with the environment. 
 ### Grounded 3D scene understanding
+The agent LEO needs to understand its relationship to its environment and define that relationship in natural language. In other words, LEO needs to ground the 3D world with natural language. However, compared to 2D data, the amount of 3D data that exists is extremely limited, and so little exploration has been to utilize LLMs to ground the 3D scene. Some works use a combination of 2D images to simulate 3D data and other works use actual 3D point cloud data. LEO uses a combination of 2D and 3D data. 
 ### 3D data prompting from LLMs
 ## Models and Tokenization
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/148abe01-271d-4df4-bff8-50e4ddd361c1)      
