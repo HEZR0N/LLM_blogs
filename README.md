@@ -29,5 +29,5 @@ LEO is an excellent demonstration of our current ability to cobble together mult
  - Better translate Vision into Action: Continually bridging the gap between 3D VL and embodied action, as our experiments reveal the efficacy of their joint learning
  - Possibly use RLHF: Investigating the issues of safety and alignment in the context of embodied generalist
 
-#### References
+## References
 Author(s). (2024). An Embodied Generalist Agent in 3D World. arXiv, 2311.12871. Retrieved from https://arxiv.org/2311.12871
