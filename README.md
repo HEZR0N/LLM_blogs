@@ -11,6 +11,7 @@ Some researchers believe that the current work in AI will eventually result in t
 ### Generalist agents
 Jacks of all trades, masters of none! ChatGPT has knowledge on a wide range of topics, but it isn’t a specialist in any single domain. It has a limited ability to abstract to tackle novel problems into general ones, which is more apparent when provided with a few examples in the prompt so it can do few-shot learning. LEO needs a similar capability in the 3D world, maintaining knowledge of its state relative to its environment. 
 ### Multi-modal instruction tuning
+Currently, instruction-tuned LVLMs (Large Vision-Language Models) can take instruction via text as input as well as images, both from which the model is able to encode to a common (abstract) representation. However, these images are 2D, and while there are models that can handle 3D input, they only go as far as interpreting the input/instructions and are not trained to interact with the environment. 
 ### Grounded 3D scene understanding
 ### 3D data prompting from LLMs
 ## Models and Tokenization
