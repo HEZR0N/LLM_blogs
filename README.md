@@ -20,6 +20,16 @@ Some researchers believe that the current work in AI will eventually result in t
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/8dec55bc-043d-4ac0-a968-19e61126b20c)       
 
 ## Experiments and Results
+![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/b66487a0-2744-47ef-9e20-9ede83cd219b)    
+
+![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/a78a1c7e-23be-4e59-ba9b-42b876a92f84)      
+
+![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/b8fc10a8-70a5-4916-8e37-5ecc28f6a740)     
+
+
+
+![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/9e8d59b1-169a-412b-94ff-120ac5f3d23c)     
+
  - The instruction tuning of LEO conforms to the scaling law
  - Scaling up LLM
  - Alignment leads to consistent improvements.
