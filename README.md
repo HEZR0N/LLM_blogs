@@ -16,14 +16,15 @@ Currently, instruction-tuned LVLMs (Large Vision-Language Models) can take instr
 The agent LEO needs to understand its relationship to its environment and define that relationship in natural language. In other words, LEO needs to ground the 3D world with natural language. However, compared to 2D data, the amount of 3D data that exists is extremely limited, and so little exploration has been to utilize LLMs to ground the 3D scene. Some works use a combination of 2D images to simulate 3D data and other works use actual 3D point cloud data. LEO uses a combination of 2D and 3D data. 
 ### 3D data prompting from LLMs
 Current works curate 3D instruction-following data either manually with bounding boxes and dense captions or LVLMs. In contrast, LEO uses scene-graph-based prompting and refinement methods to prompt and correct the data.
-## Training, Models and Tokenization
+## The Model
 ![image](https://github.com/HEZR0N/LLM_blogs/assets/99786488/148abe01-271d-4df4-bff8-50e4ddd361c1)         
 _Figure 2: Converting all data of different modalities into a sequence of tokens_         
+### Tokenization
 For text, LEO uses the SentencePiece tokenizer to encode text with 32k subwords. 2D images and 3D data also get their own tokens, but how are actions tokenized? Well,  these discrete actions are mapped to the least used tokens in SentencePiece. While it may seem unintuitive to override existing tokens, the probability for those tokens was so low that it's worth doing so - this is a trick that LEO researchers borrowed from Google Deepmind. After tokenization, all tokens are ordered into the format seen in _Figure 2_. As seen in _Figure 1_:
 - Text: directly decoded with an embedding look-up table
 -  2D images: encoded by a pretrained OpenCLIP ConvNext model
 - 3D data: first encoded by a pretrained point cloud encoder, PointNet++, and then processed with  Spatial Transformers to turn the point cloud embedding of all objects into object-centric 3D token embeddings
-
+### Training
 After applying several token embedding functions to process the tokens, all the tokens are sent to the LLM, Vicuna-7B.              
 During training, the pretrained 3D point cloud encoder and the LLM are frozen (*not enough 3D data to fine-tune with, and the LLM is already trained well), while the 2D image encoder (*we have enough 2D data to fine-tune), the Spatial Transformer, and the LoRA parameters (*to align/ground the LLM without changing its weights or losing any functionality) are updated during training. Thus, out of LEO’s ~7B parameters, only ~142M of them will be tuned.          
 ## Datasets
